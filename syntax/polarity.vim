@@ -14,8 +14,10 @@ syn match polPunctuation "[;,:.]"
 
 syn match polComment "//.*$"
 
-syn region polString start='"' end='"' skip='\\.' contains=polStringEscape
-syn region polCharacter start="'" end="'" skip='\\.' contains=polStringEscape
+syn match polIdentifier "\a\(\a\|[0-9_']\)*"
+
+syn region polString start='"' end='"' contains=polStringEscape
+syn region polCharacter start="'" end="'" contains=polStringEscape
 syn match polStringEscape "\\[ntr\\\"']" contained
 syn match polStringEscape "\\u{[0-9a-fA-F]\{1,6}}" contained
 
@@ -29,5 +31,6 @@ hi def link polComment Comment
 hi def link polString String
 hi def link polCharacter Character
 hi def link polStringEscape SpecialChar
+hi def link polIdentifier Identifier
 
 let b:current_syntax = "polarity"
