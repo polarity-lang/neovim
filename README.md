@@ -1,17 +1,17 @@
-# polarity.nvim
-A simple Neovim plugin for the [Polarity](https://github.com/polarity-lang/polarity) language.
+# Neovim Plugin for Polarity
+A simple [Neovim](https://github.com/neovim/neovim) plugin for the [Polarity](https://github.com/polarity-lang/polarity) language.
 
 This plugin provides basic syntax highlighting and sets up the LSP server for Polarity source files.
 
 ## Installation
 You need to have the `pol` binary available (or set a custom path in the plugin configuration).
 
-Use your preferred plugin manager to install `"rabuu/polarity.nvim"`.
+Use your preferred plugin manager to install `"polarity-lang/neovim"`.
 
 Here's an example for the [lazy.nvim](https://github.com/folke/lazy.nvim) plugin manager:
 ```lua
 {
-    "rabuu/polarity.nvim",
+    "polarity-lang/neovim",
     ft = "polarity",
 
     -- This is the default configuration
