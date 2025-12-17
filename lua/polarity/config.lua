@@ -1,14 +1,6 @@
 local M = {}
 
 M.defaults = {
-	lsp = {
-		enable = true,
-		server = {
-			cmd = { "pol", "lsp" },
-			settings = {},
-			on_attach = nil,
-		},
-	},
 	auto_format = false,
 }
 
