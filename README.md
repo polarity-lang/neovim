@@ -13,19 +13,9 @@ Here's an example for the [lazy.nvim](https://github.com/folke/lazy.nvim) plugin
 {
     "polarity-lang/neovim",
     ft = "polarity",
-
-    -- This is the default configuration
-    opts = {
-        lsp = {
-            enable = true,
-            server = {
-                cmd = { "pol", "lsp" },
-                settings = {},
-                on_attach = nil,
-            },
-        },
-        auto_format = false,
-    },
+    config = function()
+        vim.lsp.enable("polarity")
+    end,
 }
 ```
 
