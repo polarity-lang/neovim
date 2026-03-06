@@ -9,7 +9,7 @@ syn keyword polControlKeyword match comatch
 syn keyword polTypeKeyword Type
 syn keyword polModifierKeyword implicit
 
-syn match polOperator "=>|<-"
+syn match polOperator "=>\|<-"
 syn match polPunctuation "[;,:.]"
 
 syn match polComment "//.*$"
