@@ -4,12 +4,12 @@ if exists("b:current_syntax")
 	finish
 end
 
-syn keyword polKeyword data codata def codef let absurd use infix as note extern
+syn keyword polKeyword data codata def codef let absurd use infix as note extern do
 syn keyword polControlKeyword match comatch
 syn keyword polTypeKeyword Type
 syn keyword polModifierKeyword implicit
 
-syn match polOperator "=>"
+syn match polOperator "=>|<-"
 syn match polPunctuation "[;,:.]"
 
 syn match polComment "//.*$"
